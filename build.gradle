@@ -34,7 +34,7 @@ neoForge {
     }
 }
 
-jarJar.enable()
+
 
 dependencies {
     // Create (slim — без встроенных зависимостей) и его рантайм-библиотеки
