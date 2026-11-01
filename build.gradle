@@ -35,7 +35,6 @@ neoForge {
 }
 
 
-
 dependencies {
     // Create (slim — без встроенных зависимостей) и его рантайм-библиотеки
     implementation("com.simibubi.create:create-${minecraft_version}:${create_version}:slim") { transitive = false }
