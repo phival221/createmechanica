@@ -1,0 +1,11 @@
+{
+  "itemGroup.createmechanica": "Create: Mechanica",
+  "block.createmechanica.gear_reducer": "Gear Reducer (1:2)",
+  "block.createmechanica.gear_multiplier": "Gear Multiplier (2:1)",
+  "block.createmechanica.rotation_sensor": "Rotation Sensor",
+  "block.createmechanica.altimeter": "Altimeter",
+  "block.createmechanica.proximity_sensor": "Proximity Sensor",
+  "createmechanica.mode.all": "Detecting: all living entities",
+  "createmechanica.mode.hostile": "Detecting: hostile mobs",
+  "createmechanica.mode.players": "Detecting: players"
+}

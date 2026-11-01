@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "createmechanica:block/proximity_sensor_side",
+    "down": "createmechanica:block/proximity_sensor_side",
+    "up": "createmechanica:block/proximity_sensor_side",
+    "north": "createmechanica:block/proximity_sensor",
+    "south": "createmechanica:block/proximity_sensor_side",
+    "west": "createmechanica:block/proximity_sensor_side",
+    "east": "createmechanica:block/proximity_sensor_side"
+  }
+}

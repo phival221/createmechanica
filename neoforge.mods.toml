@@ -1,0 +1,49 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "MIT"
+
+[[mods]]
+modId = "createmechanica"
+version = "0.1.0"
+displayName = "Create: Mechanica"
+description = '''
+Дополнительные функциональные блоки для Create: редукторы/мультипликаторы,
+датчик вращения, высотомер и датчик приближения.
+Совместим с Sable-подуровнями (Create Aeronautics).
+'''
+
+[[dependencies.createmechanica]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.262,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.createmechanica]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.22)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.createmechanica]]
+modId = "create"
+type = "required"
+versionRange = "[6.0.10,)"
+ordering = "AFTER"
+side = "BOTH"
+
+# Необязательные: аддон работает и без них
+[[dependencies.createmechanica]]
+modId = "sable"
+type = "optional"
+versionRange = "[1.0,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.createmechanica]]
+modId = "aeronautics"
+type = "optional"
+versionRange = "[1.0,)"
+ordering = "AFTER"
+side = "BOTH"

@@ -1,0 +1,50 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.148'
+}
+
+version = project.mod_version
+group = 'com.example.createmechanica'
+base { archivesName = project.mod_id }
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+repositories {
+    maven { name = 'Create'; url = 'https://maven.createmod.net' }
+    maven { name = 'Modresources'; url = 'https://raw.githubusercontent.com/Fuzss/modresources/main/maven/' }
+    exclusiveContent {
+        forRepository { maven { name = 'RyanHCode'; url = 'https://maven.ryanhcode.dev/releases' } }
+        filter { includeGroup('dev.ryanhcode.sable-companion') }
+    }
+}
+
+neoForge {
+    version = project.neo_version
+    runs {
+        client {
+            client()
+        }
+        server {
+            server()
+            programArgument '--nogui'
+        }
+    }
+    mods {
+        "${project.mod_id}" { sourceSet sourceSets.main }
+    }
+}
+
+jarJar.enable()
+
+dependencies {
+    // Create (slim — без встроенных зависимостей) и его рантайм-библиотеки
+    implementation("com.simibubi.create:create-${minecraft_version}:${create_version}:slim") { transitive = false }
+    implementation "net.createmod.ponder:Ponder-NeoForge-${minecraft_version}:${ponder_version}"
+    compileOnly    "dev.engine-room.flywheel:flywheel-neoforge-api-${minecraft_version}:${flywheel_version}"
+    runtimeOnly    "dev.engine-room.flywheel:flywheel-neoforge-${minecraft_version}:${flywheel_version}"
+
+    // Sable Companion вшивается в наш jar (JiJ) — без Sable используется безопасная заглушка
+    jarJar(api("dev.ryanhcode.sable-companion:sable-companion-common-1.21.1:[${sable_companion_version},)")) {
+        version { prefer(project.sable_companion_version) }
+    }
+}

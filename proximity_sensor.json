@@ -1,0 +1,9 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "createmechanica:block/proximity_sensor"
+      }
+    }
+  ]
+}

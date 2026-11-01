@@ -1,0 +1,31 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "axis": "y"
+      },
+      "apply": {
+        "model": "createmechanica:block/rotation_sensor"
+      }
+    },
+    {
+      "when": {
+        "axis": "x"
+      },
+      "apply": {
+        "model": "createmechanica:block/rotation_sensor",
+        "x": 90,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "axis": "z"
+      },
+      "apply": {
+        "model": "createmechanica:block/rotation_sensor",
+        "x": 90
+      }
+    }
+  ]
+}

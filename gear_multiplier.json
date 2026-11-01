@@ -1,0 +1,31 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "axis": "y"
+      },
+      "apply": {
+        "model": "createmechanica:block/gear_multiplier"
+      }
+    },
+    {
+      "when": {
+        "axis": "x"
+      },
+      "apply": {
+        "model": "createmechanica:block/gear_multiplier",
+        "x": 90,
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "axis": "z"
+      },
+      "apply": {
+        "model": "createmechanica:block/gear_multiplier",
+        "x": 90
+      }
+    }
+  ]
+}

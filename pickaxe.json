@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "createmechanica:gear_reducer",
+    "createmechanica:gear_multiplier",
+    "createmechanica:rotation_sensor",
+    "createmechanica:altimeter",
+    "createmechanica:proximity_sensor"
+  ]
+}

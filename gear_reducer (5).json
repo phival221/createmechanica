@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "createmechanica:block/gear_reducer_end",
+    "side": "createmechanica:block/gear_reducer_side"
+  }
+}

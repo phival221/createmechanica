@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "createmechanica:block/altimeter_side",
+    "down": "createmechanica:block/altimeter_side",
+    "up": "createmechanica:block/altimeter_side",
+    "north": "createmechanica:block/altimeter",
+    "south": "createmechanica:block/altimeter_side",
+    "west": "createmechanica:block/altimeter_side",
+    "east": "createmechanica:block/altimeter_side"
+  }
+}

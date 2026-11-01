@@ -1,0 +1,11 @@
+{
+  "itemGroup.createmechanica": "Create: Mechanica",
+  "block.createmechanica.gear_reducer": "Редуктор (1:2)",
+  "block.createmechanica.gear_multiplier": "Мультипликатор (2:1)",
+  "block.createmechanica.rotation_sensor": "Датчик вращения",
+  "block.createmechanica.altimeter": "Высотомер",
+  "block.createmechanica.proximity_sensor": "Датчик приближения",
+  "createmechanica.mode.all": "Цели: все живые существа",
+  "createmechanica.mode.hostile": "Цели: враждебные мобы",
+  "createmechanica.mode.players": "Цели: игроки"
+}
